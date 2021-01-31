@@ -1,3 +1,3 @@
 # dibom
-pip install 
+pip install \n
 git clone https://github.com/Dima-dimaa/dibom
