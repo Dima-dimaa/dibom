@@ -1,2 +1,2 @@
 # dibom
-# git clone rbrgriogrgrt
+ git clone rbrgriogrgrt
