@@ -5,4 +5,4 @@ git clone https://github.com/Dima-dimaa/dibom
 
 cd dibom
 
-pyhon3 dibom.py
+python3 dibom.py
