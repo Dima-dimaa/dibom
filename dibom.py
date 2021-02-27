@@ -1,4 +1,4 @@
-import requests, time, os, fake_useragent
+import requests, time, os, fake_useragent, random
 from termcolor import colored
 user = fake_useragent.UserAgent().random
 headers = {'user_agent': user}
@@ -16,7 +16,13 @@ if t == 0:
  \__,_|_|_.__/ \___/|_| |_| |_|
                                                               
        Создатель: Дмитрий Янков"""
-    print(colored(banner, 'magenta'))
+    x = random.randint(1, 3)
+    if x == 1:
+        print(colored(banner, 'magenta'))
+    if x == 2:
+        print(colored(banner, 'yellow'))
+    if x == 3:
+        print(colored(banner, 'green'))
     print('')
     phone = input(colored('Введите номер: (Без +) —>', 'magenta'))
     if len(phone) == 11:
