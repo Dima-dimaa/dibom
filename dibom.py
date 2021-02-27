@@ -41,6 +41,13 @@ else:
 if t == 2:
     f = 0
     os.system("clear")
+    if x == 1:
+        print(colored(banner, 'magenta'))
+    if x == 2:
+        print(colored(banner, 'yellow'))
+    if x == 3:
+        print(colored(banner, 'green'))
+    print('')
     try:
         if int(k) >= 1:
             print(colored('Спам запущен!', 'green'))
