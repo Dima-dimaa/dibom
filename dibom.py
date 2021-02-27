@@ -82,9 +82,9 @@ if t == 2:
                 try:
                     a = requests.post("https://nn-card.ru/api/1.0/register",
                                       json={"phone": phone, "password": '57873456'}, headers=headers)
-                    print(colored('my.modulbank-[+]', 'cyan'))
+                    print(colored('nn-card-[+]', 'cyan'))
                 except:
-                    print(colored('my.modulbank-[-]', 'cyan'))
+                    print(colored('nn-card-[-]', 'cyan'))
                 try:
                     a = requests.post("https://my.modulbank.ru/api/v2/auth/phone",
                                   json={"CellPhone": phone[1:]}, headers=headers)
