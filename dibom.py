@@ -7,6 +7,13 @@ f=0
 gg = 0
 if t == 0:
     os.system("clear")
+    banner ="""
+       ╔═╦═╦╦╦╦╦═╦╦╦╗╔╦══╗
+       ║╠║╩║╔╣═╣╣╣╔╣╚╝╠╗╔╝
+       ╚═╩╩╩╝╚╩╩═╩╝╚══╝╚╝ 
+       Создатель: Дмитрий Янков"""
+    print(colored(banner, 'magenta'))
+    print('')
     phone = input(colored('Введите номер: (Без +) —>', 'magenta'))
     if len(phone) == 11:
         t = 1
