@@ -3,6 +3,8 @@ pkg install git
 
 pkg install python
 
+pip install fake-useragent
+
 pip install colored
 
 pip install requests
