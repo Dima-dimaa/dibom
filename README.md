@@ -5,7 +5,7 @@ pkg install python
 
 pip install fake-useragent
 
-pip install colored
+pip install termcolor
 
 pip install requests
 
